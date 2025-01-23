@@ -1,0 +1,23 @@
+{
+    "name": "odlb",
+    "version": "0.0.1",
+    "main": "build/server.js",
+    "node-version": "20",
+    "type": "module",
+    "scripts": {
+        "start": "npm run build && npm run dev",
+        "build": "npm run tsc",
+        "dev": "npm run watch-src",
+        "watch-src": "nodemon --watch src --ext ts --exec \"npm run tsc\"",
+        "tsc": "tsc --outDir builde",
+        "start-server": "node build/server.js"
+    },
+    "dependencies": {
+        "@lit-labs/ssr": "^3.2.2",
+        "lit": "^3.1.4"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0",
+        "nodemon": "^3.1.4"
+    }
+}
