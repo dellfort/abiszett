@@ -9,7 +9,7 @@
         "build": "npm run tsc",
         "dev": "npm run watch-src",
         "watch-src": "nodemon --watch src --ext ts --exec \"npm run tsc\"",
-        "tsc": "tsc --outDir builde",
+        "tsc": "tsc --outDir public",
         "start-server": "node build/server.js"
     },
     "dependencies": {
