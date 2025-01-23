@@ -14,7 +14,7 @@ jobs:
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          repoToken: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ABISZETT_521C5 }}
           channelId: live
           projectId: abiszett-521c5
